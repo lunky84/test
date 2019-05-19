@@ -1,0 +1,30 @@
+{
+  "name": "sponge-developer-test",
+  "version": "1.0.0",
+  "description": "SpongeUK Developer Test",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "John Downie",
+  "dependencies": {
+    "@babel/cli": "^7.4.4",
+    "connect": "^3.6.2",
+    "serve-static": "^1.12.3"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.4.4",
+    "@babel/preset-env": "^7.4.4",
+    "browser-sync": "^2.26.5",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
+    "gulp-sass": "^4.0.2"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env"
+    ]
+  }
+}

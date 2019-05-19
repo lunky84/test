@@ -1,0 +1,101 @@
+/*//////////////////////////////////////////////////////////////////*/
+/* Variables */
+/*//////////////////////////////////////////////////////////////////*/
+/*//////////////////////////////////////////////////////////////////*/
+/* Accordion */
+/*//////////////////////////////////////////////////////////////////*/
+.accordion {
+  margin: 30px 0 0 0; }
+
+.accordion-heading {
+  background-color: #F9423A;
+  /* sponge brand primary */
+  box-sizing: border-box;
+  color: white;
+  cursor: pointer;
+  font-size: 30px;
+  padding: 20px;
+  width: 100%; }
+
+.accordion-container {
+  overflow: hidden;
+  height: 0;
+  transition: all 0.5s ease-in-out;
+  background-color: #f1f1f1; }
+
+.accordion-content {
+  padding: 20px; }
+  .accordion-content p:last-child {
+    padding: 0; }
+
+/*//////////////////////////////////////////////////////////////////*/
+/* Content */
+/*//////////////////////////////////////////////////////////////////*/
+.display-photo {
+  border-radius: 50%;
+  margin: 0 0 20px 0; }
+
+/*//////////////////////////////////////////////////////////////////*/
+/* Boxes (Task 9)
+/*/
+#boxes {
+  box-sizing: border-box;
+  color: white;
+  display: table;
+  float: left;
+  font-size: 1.5em;
+  height: 100%;
+  margin: 0 0 60px 0;
+  position: relative;
+  width: 100%; }
+  #boxes:after {
+    background-color: #7B0051;
+    content: "wrapper";
+    padding: 15px 20px;
+    position: absolute;
+    right: 0;
+    top: 100%; }
+
+#box-right {
+  float: right;
+  height: 0;
+  padding-bottom: 50%;
+  position: relative;
+  width: 50%; }
+  #box-right:before {
+    content: "right";
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate3d(-50%, -50%, 0); }
+
+html, body {
+  height: 100%; }
+
+#box-left {
+  background-color: transparent !important;
+  display: table-cell;
+  float: left;
+  height: 100%;
+  padding-bottom: 50%;
+  position: relative;
+  vertical-align: middle;
+  width: 50%; }
+  #box-left:before {
+    background-color: #FFB400;
+    content: "left";
+    display: block;
+    margin: -25px 0 0 0;
+    max-width: 210px;
+    padding: 16px 0;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    width: 100%; }
+
+/*//////////////////////////////////////////////////////////////////*/
+/* Typography  Responsive font size (Task 12)
+/*/
+@media (max-width: 500px) {
+  html {
+    font-size: 12.5px; } }
